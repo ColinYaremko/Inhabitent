@@ -15,3 +15,164 @@
 .widget_search .search-submit {
 	display: none;
 }
+
+
+//sidebar
+body.blog div.site-content, body.error404 div.site-content {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row-reverse;
+	width: $width;
+	align-content: center;
+	margin: 0 auto;
+	div#primary-home {
+		width: 70%;
+		padding-bottom: 50px;
+	}
+	.side-widget-area {
+		border-left: 1px $color__border solid;
+		position: relative;
+		width: 30%;
+		margin-bottom: 50px;
+		padding: 50px 0 0 50px;
+		top: 50px;
+		aside.widget {
+			margin-bottom: 60px;
+		}
+	}
+}
+
+#text-3 .widget-title, #tent-biz-hours-3 .widget-title, #archives-2 .widget-title {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.5rem;
+	letter-spacing: 3px;
+	margin: 10px 0;
+}
+
+.day-of-week {
+	font-weight: bold;
+}
+
+.tent-biz-hours-class {
+	p {
+		font-family: Merriweather;
+		margin-bottom: 15px;
+	}
+}
+
+.widget-phone, .contact-meta {
+	font-size: 1.05rem;
+	font-family: Merriweather;
+	i {
+		font-size: 1rem;
+		padding-right: 11px;
+	}
+	a {
+		font-family: Merriweather;
+		text-decoration: none;
+	}
+	span {
+		margin-left: 18px;
+	}
+}
+
+#archives-2 ul {
+	margin: 0;
+	padding: 0;
+	li {
+		display: block;
+		font-family: Merriweather;
+		margin: 5px 0;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+//footer
+.site-footer {
+	background-image: url('../../assets/images/footer/dark-wood@2x.png');
+	background-size: contain;
+	background-repeat: repeat;
+}
+
+.footer-widget-area {
+	padding: 50px 70px 0;
+	height: auto;
+	color: white;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	position: relative;
+	font-size: 1rem;
+	font-family: Merriweather;
+	h2 {
+		color: $color__orange-brand;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		font-family: Novecentosanswide;
+		font-weight: bold;
+		margin: 0;
+		i {
+			color: white;
+		}
+	}
+	a:link {
+		color: white;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	i, .contact-meta i {
+		padding-right: 10px;
+		font-size: 1.1rem;
+	}
+	.social {
+		margin: 5px 0 0;
+		i {
+			font-size: 1.5rem;
+		}
+	}
+	#text-6 {
+		grid-column: 1;
+
+	.contact-meta, .widget-title, .social {
+		margin: 20px 0;
+		padding: 0;
+	}
+	}
+	#tent-biz-hours-5 {
+		grid-column: 2;
+		p {
+			margin: 20px 0;
+		}
+	}
+	.footer-logo {
+		background-image: url('../../assets/images/inhabitent-logo-text.svg');
+		grid-column: 4;
+		margin: 20px 0;
+		background-size: contain;
+		background-repeat: no-repeat;
+		a {
+			font-size: 3.6rem;
+			position: relative;
+			top: 10px;
+			color: rgba(0,0,0,0);
+		}
+	}
+	span {
+		font-weight: bold;
+	}
+}
+
+footer#colophon p.copyright {
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	padding: 30px;
+	margin: 0;
+	span {
+		font-size: 0.8rem;
+	}
+}

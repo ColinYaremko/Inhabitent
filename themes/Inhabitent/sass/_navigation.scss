@@ -4,6 +4,10 @@
 
 /* Links */
 
+a:link {
+	color: $color__green-brand;
+}
+
 a {
 	color: $color__link;
 
@@ -25,6 +29,112 @@ a {
 }
 
 /* Menus */
+
+
+
+.menu-item {
+	padding: 10px;
+}
+
+div#primary-menu {
+	position: fixed;
+	left: 0;
+	width: 100vw;
+	min-width: $width;
+	z-index: 1000;
+	padding: 0;
+	height: 50px;
+	display: flex;
+	margin: 0;
+	font-size: 0.982rem;
+	justify-content: center;
+	align-content: center;
+	flex-direction: row;
+	text-transform: uppercase;
+	background-color: rgba(255,255,255,0.7);
+	border-bottom: 1px $color__border solid;
+	a.icon-search:hover {
+		cursor: pointer;
+	}
+	a:visited {
+		color: $color__green-brand;
+	}
+	a:visited:hover {
+		color: $color__link-hover;
+		cursor:pointer;
+	}
+	.fa-search {
+		padding:14px;
+		&:hover {
+			color: $color__link-hover;
+		}
+		&:visited:hover {
+			color: $color__link-hover;
+		}
+	}
+	.search-form {
+		transition: .5s;
+		width: 0;
+		overflow: hidden;
+		padding: 0;
+		box-shadow: none;
+		border: none;
+		.search-submit {
+			display: none;
+		}
+		fieldset {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			input {
+				background-color: rgba(0, 0, 0, 0);
+				border: 0;
+				padding: 12px;
+				width: 100%;
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+	}
+	.search-form-click {
+		transition: 1s;
+		width: 200px;
+	}
+}
+
+.menu-item-217 {
+	transition: .5s;
+	width: 100px;
+	padding-right: 777px;
+	a {
+		background-image: url('../../assets/images/inhabitent-logo-tent.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 50px;
+		height: 30px;
+		left: 0;
+		transform: translateY(-1px);
+		color: rgba(0, 0, 0, 0);
+		&:hover {
+			background-color: rgba(25, 25, 112, 0.3);
+			border-radius: 49%;
+		}
+	}
+}
+
+.menu-item-217-click {
+	transition: 1s;
+	width: 0px;
+	padding-right: 577px;
+}
+
+
+
+
+
+
 
 .main-navigation {
 	clear: both;

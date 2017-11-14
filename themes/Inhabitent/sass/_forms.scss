@@ -60,3 +60,173 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+/*************************************************************************/
+/*************************************************************************/
+/*************************************************************************/
+
+
+/* Comments */
+
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+
+div.site-info a {   /*Hides the wordpress junk in the footer*/
+	display: none;
+}
+
+.comment-list {
+	margin: 0;
+	padding: 0;
+}
+
+.comment-body {
+	display: flex;
+	margin: 40px 0;
+	border-bottom: 1px $color__border solid;
+	font-family: Merriweather;
+	p{
+		margin: 18px 0;
+	}
+	.reply {
+		margin-bottom: 32px;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.comments-title {
+	padding-top: 80px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 2.2rem;
+}
+
+.comment-author-avatar {
+	padding-right: 40px;
+	img {
+	border-radius: 49%;
+	}
+}
+
+.comment-author {
+	font-weight: bold;
+	.fn {
+		font-style: normal;
+	}
+}
+
+.comment-metadata {
+	color: $color__m-grey-brand;
+	font-family: Merriweather;
+	a {
+		color: $color__m-grey-brand;
+		&:hover {
+			color: $color__m-grey-brand;
+		}
+		&:visited:hover {
+			color: $color__m-grey-brand;
+		}
+	}
+}
+
+.logged-in-as {
+	display: none;
+}
+
+.comment-reply-title {
+	font-size: 1.8rem;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+.comment-subtitle, .comment-notes {
+	font-size: 1rem;
+	font-family: Merriweather;
+}
+
+.comment-notes {
+	margin-bottom: 35px;
+}
+
+.comment-form-comment {
+	text-transform: uppercase;
+	font-size: 1.09rem;
+	margin: 5px 0;
+	label{
+		display: block;
+		margin: 11px 0;
+	}
+}
+
+textarea#comment {
+	background-color: lighten($color__background-hr, 15%);
+}
+
+.comment-form-author, .comment-form-email {
+	display: inline-block;
+	width: 49.7%;
+	flex-direction: row;
+	flex-flow: wrap;
+	text-transform: uppercase;
+	font-family: Novecentosanswide;
+	font-size: 1.1rem;
+	margin-top: 45px;
+	input {
+		margin: 10px 0 5px;
+		display: inline;
+		border-radius: 0;
+	}
+	span {
+		color: red;
+	}
+}
+
+.comment-form-url {
+	display: inline;
+	text-transform: uppercase;
+	font-family: Novecentosanswide;
+	font-size: 1.1rem;
+	input {
+		margin: 10px 0 10px;
+		display: inline;
+		border-radius: 0;
+	}
+}
+
+input#author, input#email, input#url {
+	background-color: lighten($color__background-hr, 15%);
+	height: 38px;
+	border-color: $color__border;
+}
+
+input#submit.submit {
+	background-color: $color__green-brand;
+	border: none;
+	box-shadow: none;
+	color: white;
+	font-size: .9rem;
+	font-weight: 200;
+	text-transform: uppercase;
+	text-shadow: none;
+	font-family: Novecentosanswide;
+	border-radius: 0;
+	margin: 0 0 50px;
+	padding: 12px 24px;
+}
+
+//contact page
+#wpcf7-f94-p6-o1 {
+	margin-top: 20px;
+	p label{
+	text-transform: uppercase;
+		span {
+			color: red;
+		}
+	}
+}

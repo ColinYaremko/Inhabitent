@@ -3,3 +3,322 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+
+/* Front page */
+div.site-content {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 100vw;
+	min-width: $width;
+	main.site-main {
+		width: $width;
+		margin: 0 auto;
+	}
+}
+
+.shop-stuff {
+	width: auto;
+	height: auto;
+	display: flex;
+	ul {
+		display: flex;
+		width: $width;
+		justify-content: space-between;
+		padding: 0;
+		margin: 0;
+		margin-bottom: 40px;
+		li {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width:260px;
+			border: 1px $color__border solid;
+			border-top: 5px $color__border solid;
+			padding: 10px;
+			&:first-child {
+				margin-left: 5px;
+			}
+			&:last-child {
+				margin-right: 5px
+			}
+			&:hover {
+				border-color: darken($color__yellow-brand, 20%);
+			}
+			img {
+				width: 70px;
+				height: 70px;
+			}
+			p {
+				text-align: center;
+				font-size: 1.2em;
+			}
+			a {
+				color: white;
+				padding: 6px 22px;
+				text-transform: uppercase;
+				background-color: $color__green-brand;
+				&:link {
+					text-decoration: none;
+				}
+				&:visited {
+					color: white;
+				}
+				&:hover {
+					background-color: darken($color__green-brand, 20%);
+				}
+			} 
+		}
+	}
+}
+
+div.most-recent-journal {
+	width: $width;
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0;
+	.journal-recent-block-item {
+		display: flex;
+		flex-direction: column;
+		border: 1px $color__border solid;
+		width: 360px;
+		img {
+			width: 360px;
+			height: 250px;
+			object-fit: cover;
+			border-bottom: 5px $color__border solid;
+		}
+	}
+}
+
+div.words-wrapper {
+	padding: 10px;
+	padding-bottom: 2px;
+	.entry-meta {
+		font-size: 0.9em;
+	}
+	.blog-post-title {
+		margin: 0;
+		text-transform: uppercase;
+		font-size: 1.5em;
+		a:link {
+			text-decoration: none;
+		}
+	}
+}
+
+.read-more-link {
+	width:146px;
+	height: 44px;
+	margin: 24px 0 0;
+	font-size: 1rem;
+	a {
+		border: 1px black solid;
+		padding: 10px 21px;
+		text-transform: uppercase;
+		font-weight: 100;
+		&:link {
+			color: black;
+			text-decoration: none;
+		}
+		&:visited {
+			color: black;
+		}
+	} 
+	&:hover, &:visited:hover {
+		a {
+			background-color: $color__green-brand;
+			border: 1px $color__m-grey-brand solid;
+			color: white;
+		}
+	}
+}
+
+.adventures-title {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2.5em;
+	margin: 70px;
+}
+
+.adventures-container {
+	display: grid;
+	width: $width;
+	height: 570px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 30px;
+	grid-template-areas: "img1 img1 img2 img2" "img1 img1 img3 img4";
+	grid-gap: 20px;
+	grid-auto-flow: row;
+	margin-bottom: 85px;
+	h3 {
+		color: $color__background-body;
+		font-size: 2.3rem;
+		line-height: 1.2;
+		padding: 0;
+		margin: 0;
+		font-weight: 100;
+	}
+	.adventures-img1-container {
+		grid-area: img1;
+	}.adventures-img2-container {
+		grid-area: img2;
+	}
+	.adventures-img3-container {
+		grid-area: img3;
+	}
+	.adventures-img4-container {
+		grid-area: img4;
+	}
+	.adventures-img4-container, .adventures-img3-container, .adventures-img2-container, .adventures-img1-container {
+		overflow: hidden;
+	}
+	.adventures-img1 {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/images/adventure-photos/canoe-girl.jpg');
+	}
+	.adventures-img2 {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/images/adventure-photos/beach-bonfire.jpg');
+	}
+	.adventures-img3 {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/images/adventure-photos/mountain-hikers.jpg');
+	}
+	.adventures-img4 {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/images/adventure-photos/night-sky.jpg');
+	}
+	.adventures-img1, .adventures-img2, .adventures-img3, .adventures-img4 {
+		transform: scale(1.2);
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+	}
+	.adventures-img1, .adventures-img2{
+		padding: 89px 70px;
+	}
+	.adventures-img2{
+		background-position: center 85%;
+		padding-top: 66px;
+	}
+	.adventures-img3, .adventures-img4 {
+		padding: 40px 35px;
+		h3 {
+			font-size: 1.6rem;
+		}
+	}
+	.read-more-link .read-more {
+		color: $color__background-body;
+		border-color: $color__background-body;
+		background-color: rgba(0,0,0,0);
+		&:hover, &:hover:visited {
+			border-color: $color__green-brand;
+			background-color: $color__green-brand;
+		}
+	}
+	p {
+		font-size: 0.8rem;
+	}
+	p.more {
+		font-size: 1.2rem;
+		margin: 8px 0;
+		.more-adventures {
+			color: white;
+			padding: 12px 26px;
+			text-transform: uppercase;
+			background-color: $color__green-brand;
+			&:link {
+				text-decoration: none;
+			}
+			&:visited {
+				color: white;
+			}
+			&:hover {
+				background-color: darken($color__green-brand, 20%);
+			}
+		}
+	} 
+}
+
+a.disappear {
+	display: none;
+}
+
+//page.php
+iframe {
+	position: relative;
+	top: 100px;
+}
+
+.page-template-default .site-content {
+	display: flex;
+	flex-direction: row-reverse;
+	width: $width;
+	margin: 0 auto;
+	article#post-6 {
+		width: 100%;
+		h1.entry-title {
+			color: black;
+			position: relative;
+			top:100px;
+			font-weight: bold;
+			width: 100%;
+			text-transform: uppercase;
+			font-size: 2.6rem;
+			margin-bottom: 40px;
+		}
+		h2.contact-page-header {
+			font-size: 1.9rem;
+			text-transform: uppercase;
+			font-weight: bold;
+			text-align: left;
+			margin-top: 120px;
+		}
+		p.contact-page-words {
+			font-family: Merriweather;
+			font-weight: normal;
+			line-height: 1.5;
+			font-size: 1rem;
+		}
+		h2.mail {
+			text-align: left;
+		}
+	}
+}
+
+//about page
+body.page-template-about div.container {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	}
+	.entry-content {
+	h2 {
+		font-size: 2.2rem;
+	}
+}
+
+body.page-template-about p {
+	margin: 25px 160px;
+	font-size: 1rem;
+	font-family: Merriweather;
+	line-height: 1.75;
+	&:last-of-type {
+		padding-bottom: 50px;
+	}
+}
+
+article.page-template-about h1.entry-title {
+	display: inline;
+	position: absolute;
+	text-align: center;
+	min-width: $width;
+}
+
+article.page h2 {
+	font-weight: bold;
+	font-size: 2rem;
+	margin-top: 40px;
+}

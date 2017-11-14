@@ -5,6 +5,33 @@
 html {
 	box-sizing: border-box;
 	@include font-size(1);
+	width: 100vw;
+	min-width: $width;
+	margin: 0 auto;
+	height: 100%;
+}
+
+
+
+
+p.site-description {
+	display: none;
+}
+
+.home, .page {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	margin: 0 auto;
+	font-size: 16px;
+	color: #404040;
+	line-height: 1.75em;
+}
+
+.page-template-about h1.entry-title {
+	text-transform: uppercase;
+	font-size: 250%;
+	text-align: center;
+	transform: translateY(50vh);
+	color: white;
 }
 
 *,
@@ -15,6 +42,11 @@ html {
 
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	width: 100vw;
+	min-width: $width;
+	display: flex;
+	height: 100%;
+	justify-content:center;
 }
 
 blockquote, q {
@@ -67,4 +99,169 @@ img {
 table {
 	margin: 0 0 $base__space-unit;
 	width: 100%;
+}
+
+//front-page shop nav
+.fp-shop-title, .journal-title-fp {
+	font-size: 2.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 65px 0;
+	margin:0;
+}
+
+body.archive .page-header {
+	ul {
+		margin: 0 0 30px;
+		padding: 0;
+		text-align: center;
+		padding-bottom: 40px;
+		border-bottom: 1px $color__border dashed;
+	}
+
+	h1.page-title {
+		text-align: center;
+		padding-top: 100px;
+		text-transform: uppercase;
+		font-size: 2.5rem;
+		margin-top:0;
+		margin-bottom: 20px;
+	}
+}
+
+.taxonomy-products-description {
+	text-align: center;
+	font-size: 1.1em;
+	border-bottom: 1px $color__border dashed;
+	margin-bottom: 40px;
+}
+
+.stuff {
+	display: inline;
+	text-align: center;
+	margin: 23px;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	a {
+		text-decoration: none;
+	}
+}
+
+.products-wrapper p {
+	padding:0;
+	z-index: 10;
+	background-color: $color__background-body;
+	font-family: Merriweather;
+}
+
+article.type-product {
+	width: 258px;
+	height: 100%;
+	padding: 0;
+	margin: 13px 0;
+	border: 1px $color__border solid;
+	div.text-wrapper {
+		display: flex;
+		justify-content: center;
+		flex-flow: row nowrap;
+		div.dots {
+			border-bottom: 2px black dotted;
+			border-radius: 1px;
+			flex-grow: 2;
+			height: 18px;
+			z-index: 0;
+			margin: 10px 0;
+		}
+		p.product-title {
+		margin: 10px 0 10px 20px;
+		}
+		p.product-price {
+		margin: 10px 20px 10px 0;
+		}
+	}
+}
+
+.blog .page-title {
+	display: none;
+}
+
+//search
+body.search div.site-content, body.error404 div.site-content {
+	main.site-main {
+		margin-bottom: 80px;
+		padding-right: 60px;
+	}
+	div.page-content{
+		margin-top: 0;
+	}
+	article.page {
+		margin-right: 60px;
+		margin-top: 60px;
+	}
+	#primary {
+		width: 70%;
+		position: relative;
+		margin-top: 80px;
+		fieldset {
+			border: none;
+			padding-left: 0;
+			margin-left: 0;
+		}
+		input.search-field {
+			margin-top: 40px;
+			width: 200px;
+		}
+		button.search-submit {
+			display: none;
+		}
+		h1.page-title {
+			text-transform: uppercase;
+			font-size: 2.4rem;
+			padding-bottom: 20px;
+			margin-bottom: 0;
+			border-bottom: 1px solid $color__border;
+		}
+		h2.entry-title {
+			color: black;
+			display: inline;
+			position: relative;
+			padding: 20px 25px 0 0;
+			font-size: 2.1rem;
+			background-color: rgba(0,0,0,0);
+			line-height: 1;
+			font-weight: 700;
+			text-transform: uppercase;
+			a{
+				color: $color__green-brand;
+				&:link {
+					color: $color__green-brand;
+				}
+				&:hover{
+					color: black;
+				}
+				&:visitied {
+					color: $color__green-brand;
+				}
+				&:hover:visited {
+					color: black;
+				}
+			}
+		}
+		div.entry-meta {
+			position: relative;
+			color: black;
+			padding: 5px 15px 0 0;
+			margin: 25px 0;
+			background-color: rgba(0,0,0,0);
+			text-align: left;
+			text-transform: uppercase;
+			width: 100%;
+			top: 0;
+		}
+		div.entry-summary {
+			font-family: Merriweather;
+			line-height: 1.75;
+			font-size: .95rem;
+		}
+	}
 }
