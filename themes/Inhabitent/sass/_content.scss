@@ -137,6 +137,8 @@ article.post {
 			}
 		}
 	}
+
+	
 	div.entry-content p {
 		font-family: Merriweather;
 		font-size: 1rem;
@@ -357,6 +359,19 @@ body.error404 div#content main.site-main {
 }
 
 
+div#content {
+	display:flex;
+	flex-direction: row;
+}
+
+div#content.site-content {
+	display: flex;
+	flex-direction: column;
+}
+
+div#content.site-content p.BodyA {
+	width: 250px;
+}
 /********************************************************************/
 
 
@@ -367,3 +382,15 @@ body.error404 div#content main.site-main {
 
 
 /********************************************************************/
+
+div.product-type-blocks {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+div.product-type-block-wrapper img {
+
+	height: 70px;
+	width: 70px;
+}

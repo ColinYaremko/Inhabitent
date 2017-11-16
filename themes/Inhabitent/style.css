@@ -1108,7 +1108,7 @@ body.blog div.site-content, body.error404 div.site-content {
       text-decoration: none; }
 
 .site-footer {
-  background-image: url("../../assets/images/footer/dark-wood@2x.png");
+  background-image: url("../assets/images/footer/dark-wood@2x.png");
   background-size: contain;
   background-repeat: repeat; }
 
@@ -1488,10 +1488,47 @@ body.error404 div#content main.site-main select#archives-dropdown--1 {
 .bypostauthor {
   display: block; }
 
+div#content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+div#content.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+div#content.site-content p.BodyA {
+  width: 250px; }
+
 /********************************************************************/
 /********************************************************************/
 /********************************************************************/
 /********************************************************************/
+div.product-type-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+div.product-type-block-wrapper img {
+  height: 70px;
+  width: 70px; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
