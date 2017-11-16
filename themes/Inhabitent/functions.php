@@ -85,6 +85,8 @@ add_filter( 'stylesheet_uri', 'inhabitent_minified_css', 10, 2 );
 function inhabitent_scripts() {
 	wp_enqueue_style( 'tent-style', get_stylesheet_uri() );
 
+	wp_enqueue_script('jQuery');
+
 	wp_enqueue_script( 'tent-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	wp_enqueue_script( 'font-awesome-cdn', 'https://use.fontawesome.com/9420eb347a.js', array(), 4.7, true);

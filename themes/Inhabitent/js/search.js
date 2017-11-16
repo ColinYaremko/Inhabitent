@@ -1,4 +1,6 @@
-// (function($){
+//(function($){
+jQuery(document).ready(function($){
+
 
 $('.icon-search').on('click', function () {
   $('#primary-menu .search-form').toggleClass('search-form-click');
@@ -12,4 +14,6 @@ if ($('.search-form-click')) {
   });
 }
 
-})(jQuery);
+}); //(jQuery);
+
+

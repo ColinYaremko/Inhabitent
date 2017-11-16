@@ -14,14 +14,16 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+					the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
+					
+				<?php	the_archive_description( '<div class="taxonomy-description">', '</div>' ); ?>
+				
+				<?php ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
+			<div class="displaystuff">
 				<?php
 					get_template_part( 'template-parts/content' );
 				?>
@@ -29,7 +31,7 @@ get_header(); ?>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
-
+			</div>
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
