@@ -21,25 +21,25 @@ get_header(); ?>
 				<?php ?>
 			</header><!-- .page-header -->
 
+			<div class="displaystuff">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-			<div class="displaystuff">
+		
 				<?php
 					get_template_part( 'template-parts/content' );
 				?>
 
 			<?php endwhile; ?>
-
+			
 			<?php the_posts_navigation(); ?>
-			</div>
+		
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
+		</div>
 		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -429,9 +429,31 @@ div.displaystuff {
 }
 
 article.type-product {
-height: 110vh;
+height: 100vh;
 }
 
 header-entry-header img {
 	min-width: 1120px;
+}
+
+
+
+div.footer-blocks.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: center;
+}
+
+footer#colophon.site-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+div.footer-block-item {
+	margin: 3rem 0;
+	padding-right: 1.5rem;
+	
 }
