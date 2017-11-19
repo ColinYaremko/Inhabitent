@@ -1,3 +1,11 @@
+<?php
+/**
+ * The template for displaying archive pages.
+ *
+ * @package Inhabitent_Theme
+ */
+get_header(); ?>
+
 <section class="product-info container">
             <h2>Shop Stuff</h2>
             <?php
@@ -23,3 +31,25 @@
                
             <?php endif; ?>
          </section>
+
+        
+         <?php /* Start the Loop */ ?>
+			<div class="archive-product-grid">	
+			<?php while ( have_posts() ) : the_post(); ?>
+			<div class="archive-product-box">
+				<?php
+					get_template_part( 'template-parts/content' , 'product-loop' );
+				?>	
+			</div>
+			<?php endwhile; ?>
+			</div>
+		<?php else : ?>
+
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+		<?php endif; ?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+<?php get_footer(); ?>

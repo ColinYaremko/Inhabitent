@@ -1,6 +1,6 @@
 <?php
 /**
- * The Fornt Page template file.
+ * The Front Page template file.
  *
  * @package Inhabitent_Theme
  */

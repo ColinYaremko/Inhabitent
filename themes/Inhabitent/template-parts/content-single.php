@@ -32,5 +32,10 @@
 
 	<footer class="entry-footer">
 		<?php inhabitent_entry_footer(); ?>
+		<div class="social-media-buttons">
+			<button><i class="fa fa-facebook"></i>Like</button>
+			<button><i class="fa fa-twitter"></i>Tweet</button>
+			<button><i class="fa fa-pinterest"></i>Pin</button>
+		</div>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

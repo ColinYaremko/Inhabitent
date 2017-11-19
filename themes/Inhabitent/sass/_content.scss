@@ -415,11 +415,7 @@ nav#site-navigation.main-navigation {
 	justify-content: flex-end;
 }
 
-// main#main.site-main {
-// 	display: flex;
-// 	flex-direction: wrap;
-// 	flex-wrap: wrap;
-// }
+
 
 div.displaystuff {
 	display: flex;
@@ -438,22 +434,92 @@ header-entry-header img {
 
 
 
-div.footer-blocks.container {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-self: center;
+
+//section.bottom-flex-area {
+//	display: flex;
+//	justify-content: space-around;
+//	align-items: center;
+//}
+footer#colophone.site-footer{
+	font-family: Merriweather;
 }
 
-footer#colophon.site-footer {
+
+div#foot-contain.footer-blocks.container {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
+}
+
+div#foot-contain.footer-blocks.container h3 {
+ color: #d99054;
+}
+
+footer.site-footer {
+	background-image: url("../../assets/images/dark-wood.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  margin-top: 30px;
+	height: 512px 512px;
+	color: #ffffff;
+	// width: 100%;
+
+
 }
 
 div.footer-block-item {
 	margin: 3rem 0;
 	padding-right: 1.5rem;
 	
+}
+
+div.contact p a {
+	color: #ffffff;
+}
+
+div.text-logo {
+	//background-image: url('../../assets/images/inhabitent-logo-text.svg');
+	width: 280px;
+	height: 50px;
+}
+
+div.copyright-container {
+  margin: 0 auto;
+	width: 1120px;
+	text-align: center;
+	text-transform: uppercase;
+} 
+
+
+
+
+
+
+
+header.entry-header img.attachment-large-size-large.wp-post-image {
+	width: 1120px;
+
+ 	//width: max;
+ 	height: 100vh;
+ }
+
+
+section.product-info.container h2 {
+	font-size: 2.4rem;
+}
+
+
+
+
+section.want-to-contain-this {
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+section.try-this-and-pray {
+	display: inline;
+
 }

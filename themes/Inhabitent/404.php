@@ -9,6 +9,11 @@
 
 get_header(); ?>
 
+<section class="try-this-and-pray">
+<div class="place-sidebar-here">
+<aside><?php get_sidebar(); ?></aside>
+</div>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -51,5 +56,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+</section>
+
 
 <?php get_footer(); ?>

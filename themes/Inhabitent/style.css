@@ -227,43 +227,42 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Merriweather';
-  src: url("../assets/fonts/Merriweather/Merriweather-Light.ttf");
-  src: local("Merriweather-Light"), local("Merriweather Light"), url("../assets/fonts/Merriweather/Merriweather-Light.ttf") format("truetype") url("../assets/fonts/Merriweather/Merriweather-Light.eot") format("embedded-opentype"), url("../assets/fonts/Merriweather/Merriweather-Light.svg") format("svg"), url("../assets/fonts/Merriweather/Merriweather-Light.woff") format("woff"), url("../assets/fonts/Merriweather/Merriweather-Light.woff2") format("woff2");
+  src: url("../../assets/fonts/Merriweather/Merriweather-Light.ttf");
+  src: local("Merriweather-Light"), local("Merriweather Light"), url("../../assets/fonts/Merriweather/Merriweather-Light.ttf") format("truetype") url("../../assets/fonts/Merriweather/Merriweather-Light.eot") format("embedded-opentype"), url("../../assets/fonts/Merriweather/Merriweather-Light.svg") format("svg"), url("../../assets/fonts/Merriweather/Merriweather-Light.woff") format("woff"), url("../../assets/fonts/Merriweather/Merriweather-Light.woff2") format("woff2");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../assets/fonts/Merriweather/Merriweather-Bold.ttf");
-  src: local("Merriweather-Bold"), local("Merriweather Bold"), url("../assets/fonts/Merriweather/Merriweather-Bold.ttf") format("truetype"), url("../assets/fonts/Merriweather/Merriweather-Bold.eot") format("embedded-opentype"), url("../assets/fonts/Merriweather/Merriweather-Bold.svg") format("svg"), url("../assets/fonts/Merriweather/Merriweather-Bold.woff") format("woff"), url("../assets/fonts/Merriweather/Merriweather-Bold.woff2") format("woff2");
+  src: url("../../assets/fonts/Merriweather/Merriweather-Bold.ttf");
+  src: local("Merriweather-Bold"), local("Merriweather Bold"), url("../../assets/fonts/Merriweather/Merriweather-Bold.ttf") format("truetype"), url("../../assets/fonts/Merriweather/Merriweather-Bold.eot") format("embedded-opentype"), url("../../assets/fonts/Merriweather/Merriweather-Bold.svg") format("svg"), url("../../assets/fonts/Merriweather/Merriweather-Bold.woff") format("woff"), url("../../assets/fonts/Merriweather/Merriweather-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../assets/fonts/Merriweather/Merriweather-LightItalic.ttf");
-  src: local("Merriweather-LightItalic"), local("Merriweather Light Italic"), local("Merriweather Light-Italic"), local("Merriweather-Light-Italic"), local("Merriweather-Light Italic"), url("../assets/fonts/Merriweather/Merriweather-LightItalic.ttf") format("truetype"), url("../assets/fonts/Merriweather/Merriweather-LightItalic.eot") format("embedded-opentype"), url("../assets/fonts/Merriweather/Merriweather-LightItalic.svg") format("svg"), url("../assets/fonts/Merriweather/Merriweather-LightItalic.woff") format("woff"), url("../assets/fonts/Merriweather/Merriweather-LightItalic.woff2") format("woff2");
+  src: url("../../assets/fonts/Merriweather/Merriweather-LightItalic.ttf");
+  src: local("Merriweather-LightItalic"), local("Merriweather Light Italic"), local("Merriweather Light-Italic"), local("Merriweather-Light-Italic"), local("Merriweather-Light Italic"), url("../../assets/fonts/Merriweather/Merriweather-LightItalic.ttf") format("truetype"), url("../../assets/fonts/Merriweather/Merriweather-LightItalic.eot") format("embedded-opentype"), url("../../assets/fonts/Merriweather/Merriweather-LightItalic.svg") format("svg"), url("../../assets/fonts/Merriweather/Merriweather-LightItalic.woff") format("woff"), url("../../assets/fonts/Merriweather/Merriweather-LightItalic.woff2") format("woff2");
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../assets/fonts/Merriweather/Merriweather-Bold-Italic.ttf");
-  src: local("Merriweather-BoldItalic"), local("Merriweather Bold Italic"), local("Merriweather Bold-Italic"), local("Merriweather-Bold-Italic"), local("Merriweather-Bold Italic"), url("../assets/fonts/Merriweather/Merriweather-BoldItalic.ttf") format("truetype"), url("../assets/fonts/Merriweather/Merriweather-BoldItalic.eot") format("embedded-opentype"), url("../assets/fonts/Merriweather/Merriweather-BoldItalic.svg") format("svg"), url("../assets/fonts/Merriweather/Merriweather-BoldItalic.woff") format("woff"), url("../assets/fonts/Merriweather/Merriweather-BoldItalic.woff2") format("woff2");
+  src: url("../../assets/fonts/Merriweather/Merriweather-Bold-Italic.ttf");
+  src: local("Merriweather-BoldItalic"), local("Merriweather Bold Italic"), local("Merriweather Bold-Italic"), local("Merriweather-Bold-Italic"), local("Merriweather-Bold Italic"), url("../../assets/fonts/Merriweather/Merriweather-BoldItalic.ttf") format("truetype"), url("../../assets/fonts/Merriweather/Merriweather-BoldItalic.eot") format("embedded-opentype"), url("../../assets/fonts/Merriweather/Merriweather-BoldItalic.svg") format("svg"), url("../../assets/fonts/Merriweather/Merriweather-BoldItalic.woff") format("woff"), url("../../assets/fonts/Merriweather/Merriweather-BoldItalic.woff2") format("woff2");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: 'Novecentosanswide';
-  src: url("../assets/fonts/Novecento/Novecentosanswide.ttf");
-  src: local("Novecentosanswide"), local("novecento sans wide"), local("Novecento Sans Wide"), local("Novecento-Sans-Wide"), local("Novecento Sans Wide"), url("../assets/fonts/Novecento/Novecentosanswide.ttf") format("truetype"), url("../assets/fonts/Novecento/Novecentosanswide.eot") format("embedded-opentype"), url("../assets/fonts/Novecento/Novecentosanswide.svg") format("svg"), url("../assets/fonts/Novecento/Novecentosanswide.woff") format("woff"), url("../assets/fonts/Novecento/Novecentosanswide.woff2") format("woff2");
+  src: local("Novecentosanswide"), local("novecento sans wide"), local("Novecento Sans Wide"), local("Novecento-Sans-Wide"), local("Novecento Sans Wide"), url("../../assets/fonts/Novecento/Novecentosanswide.eot") format("embedded-opentype"), url("../../assets/fonts/Novecento/Novecentosanswide.svg") format("svg"), url("../../assets/fonts/Novecento/Novecentosanswide.woff") format("woff"), url("../../assets/fonts/Novecento/Novecentosanswide.woff2") format("woff2");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Novecentosanswide';
-  src: url("../assets/fonts/Novecento/Novecentosanswide-DemiBold.ttf");
-  src: local("Novecentosanswide-bold"), local("novecento sans wide bold"), local("Novecento Sans Wide Bold"), local("Novecento-Sans-Wide-Bold"), local("Novecento Sans Wide Bold"), url("../assets/fonts/Novecento/Novecentosanswide-DemiBold.ttf") format("truetype"), url("../assets/fonts/Novecento/Novecentosanswide-DemiBold.eot") format("embedded-opentype"), url("../assets/fonts/Novecento/Novecentosanswide-DemiBold.svg") format("svg"), url("../assets/fonts/Novecento/Novecentosanswide-DemiBold.woff") format("woff"), url("../assets/fonts/Novecento/Novecentosanswide-DemiBold.woff2") format("woff2");
+  src: url("../../assets/fonts/Novecento/Novecentosanswide-DemiBold.ttf");
+  src: local("Novecentosanswide-bold"), local("novecento sans wide bold"), local("Novecento Sans Wide Bold"), local("Novecento-Sans-Wide-Bold"), local("Novecento Sans Wide Bold"), url("../../assets/fonts/Novecento/Novecentosanswide-DemiBold.ttf") format("truetype"), url("../../assets/fonts/Novecento/Novecentosanswide-DemiBold.eot") format("embedded-opentype"), url("../../assets/fonts/Novecento/Novecentosanswide-DemiBold.svg") format("svg"), url("../../assets/fonts/Novecento/Novecentosanswide-DemiBold.woff") format("woff"), url("../../assets/fonts/Novecento/Novecentosanswide-DemiBold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal; }
 
@@ -1573,38 +1572,54 @@ article.type-product {
 header-entry-header img {
   min-width: 1120px; }
 
-div.footer-blocks.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center; }
+footer#colophone.site-footer {
+  font-family: Merriweather; }
 
-footer#colophon.site-footer {
+div#foot-contain.footer-blocks.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
 
+div#foot-contain.footer-blocks.container h3 {
+  color: #d99054; }
+
+footer.site-footer {
+  background-image: url("../../assets/images/dark-wood.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  margin-top: 30px;
+  height: 512px 512px;
+  color: #ffffff; }
+
 div.footer-block-item {
   margin: 3rem 0;
   padding-right: 1.5rem; }
+
+div.contact p a {
+  color: #ffffff; }
+
+div.text-logo {
+  width: 280px;
+  height: 50px; }
+
+div.copyright-container {
+  margin: 0 auto;
+  width: 1120px;
+  text-align: center;
+  text-transform: uppercase; }
+
+header.entry-header img.attachment-large-size-large.wp-post-image {
+  width: 1120px;
+  height: 100vh; }
+
+section.product-info.container h2 {
+  font-size: 2.4rem; }
 
 /*--------------------------------------------------------------
 # Media

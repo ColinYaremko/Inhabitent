@@ -15,9 +15,12 @@
 
 
 
-
-<div class="footer-blocks container">
+<section class="bottom-flex-area">
+	
+<div id="foot-contain" class="footer-blocks container">
+	
 <div class="footer-block-item">
+
 <div class="contact">
 <h3>Contact Info</h3>
 <p>
@@ -60,16 +63,19 @@
 <div class="footer-block-item">
 	<div class="text-logo">
 		<a href="http://tent.academy.red/" rel="home"></a>
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/inhabitent-logo-text.svg" class="logo" alt="Inhabitent logo text";>
 	</div>
 </div>
 </div>	
+</section/
 
-
+<section class="copyright-info-foot">
 <div class="site-info">
-	<div class="container">
+	<div class="copyright-container">
+</br>
 								Copyright &copy; 2017 Inhabitent Theme				</div>
 </div>
-
+</section>
 </footer>
 
 
@@ -79,14 +85,6 @@
 
 
 
-			</div><!-- #content -->
-
-			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://redacademy.com/' ); ?>"><?php printf( esc_html( 'REDefining Education!' ), 'RED Web Dev' ); ?></a>
-				</div><!-- .site-info -->
-			</footer><!-- #colophon -->
-		</div><!-- #page -->
 
 		<?php wp_footer(); ?>
 
