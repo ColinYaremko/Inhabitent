@@ -510,7 +510,17 @@ section.product-info.container h2 {
 }
 
 
+section#primary.want-to-contain-this {
+	width: 70%;
+}
 
+div#surrounded.surround {
+	width: 70%;
+}
+
+div.sidebar-move {
+	width: 30%;
+}
 
 section.want-to-contain-this {
 	display: flex;
@@ -523,3 +533,60 @@ section.try-this-and-pray {
 	display: inline;
 
 }
+
+div.bonfire {
+	width: 50%;
+}
+
+div.canoe-gal {
+	width: 50%;
+}
+
+div.mountain-night {
+	width: 50%;
+}
+
+img.girl-in-canoe {
+	height: 540px;
+	width: 540px;
+}
+
+.beach-fire {
+	width: 560px;
+	height: 250px;
+}
+
+.mountain-pic {
+  height: 270px;
+  width: 270px;
+}
+
+.night-sky {
+	height: 270px;
+	width: 270px;
+}
+
+div.latest-adventures h1 {
+	text-transform: uppercase;
+}
+
+section.latest-adventures-container {
+	display: flex;
+	flex-direction: row;
+	flex: 1 1 0;
+}
+
+
+div.three-pic-flex {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 0;
+}
+
+div.mountain-night {
+	display: flex;
+	flex-direction: row;
+	flex: 1 1 0;
+	width: 560px;
+}
+

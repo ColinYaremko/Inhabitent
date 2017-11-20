@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-
+<body>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -111,12 +111,25 @@ $posts_array = get_posts( $args ); ?>
 
 
 
+<div class="latest-adventures">
+	<h1>Latest Adventures</h1>
+</div>
+<section class="latest-adventures-container" style:"width=70%;">
+	<div class="canoe-gal">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/canoe-girl.jpg" class="girl-in-canoe" alt="Girl in canoe" style="height:570px; width:570px;">
+	</div>
+	  <div class="three-pic-flex">
+	  <div class="bonfire">
+	    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/beach-bonfire.jpg" class="beach-fire" alt="Bonfire on the beach" style="height:250px; width:560px;">
+    </div>
+    <div class="mountain-night">
+		  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/mountain-hikers.jpg" class="mountain-pic" alt="Mountain hiking" style="height:270px; width:270px;"> 
+		  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/night-sky.jpg" class="night-sky" alt="Sky at night" style="height:270px; width:270px;">
+	  </div>
+  </div>
+<section>
 
+</body>
 
-
-
-
-
-
-<?php get_sidebar(); ?>
+<aside class-"footer-over-here"><?php get_sidebar(); ?></aside>
 <?php get_footer(); ?>
