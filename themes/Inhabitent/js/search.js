@@ -1,19 +1,25 @@
 //(function($){
 jQuery(document).ready(function($){
 
-
-$('.icon-search').on('click', function () {
-  $('#primary-menu .search-form').toggleClass('search-form-click');
-  $('#primary-menu .search-field').focus();
-  $('.menu-item-217').toggleClass('menu-item-217-click');
-});
-if ($('.search-form-click')) {
-  $('#primary-menu .search-field').on('blur', function () {
-    $('#primary-menu .search-form').toggleClass('search-form-click');
-    $('.menu-item-217').toggleClass('menu-item-217-click');
+  $('[data-toggle=search-form]').click(function() {
+    $('.search-form-wrapper').toggleClass('open');
+    $('.search-form-wrapper .search').focus();
+    $('html').toggleClass('search-form-open');
   });
-}
+  $('[data-toggle=search-form-close]').click(function() {
+    $('.search-form-wrapper').removeClass('open');
+    $('html').removeClass('search-form-open');
+  });
+$('.search-form-wrapper .search').keypress(function( event ) {
+  if($(this).val() == "Search") $(this).val("");
+});
 
-}); //(jQuery);
+$('.search-close').click(function(event) {
+  $('.search-form-wrapper').removeClass('open');
+  $('html').removeClass('search-form-open');
+});
+});
 
+ //(jQuery);
 
+//Tried to be different.  This was supposed to open a bar underneath and become the focus.

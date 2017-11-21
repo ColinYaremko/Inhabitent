@@ -32,9 +32,12 @@
 
 				<div class="header-search">
 				  <i class="fa fa-search" aria-hidden="true"></i>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<form role="search" method="get" class="search-form" action="http://tent.academy.red/"></form>
 				</div>
 				</nav><!-- #site-navigation -->			
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
+
+			
