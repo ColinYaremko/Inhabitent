@@ -31,6 +31,7 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 				<div class="header-search">
+				  <i class="fa fa-search" aria-hidden="true"></i>
 					<form role="search" method="get" class="search-form" action="http://tent.academy.red/"></form>
 				</div>
 				</nav><!-- #site-navigation -->			
