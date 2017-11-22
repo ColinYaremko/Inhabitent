@@ -6,8 +6,8 @@
  */
 
 get_header(); ?>
-<section class="want-to-contain-this" style="display:flex; flex-direction:row;">
-	<div id="primary" class="content-area" style="width:70%";>
+<section class="want-to-contain-this">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -22,7 +22,7 @@ get_header(); ?>
 
 
 
-<div class="sidebar-move" style="width:30%;">
+<div class="sidebar-move">
 <?php get_sidebar(); ?>
 </div>
 </section>

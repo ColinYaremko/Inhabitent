@@ -1645,42 +1645,29 @@ section.try-this-and-pray {
 /*Front Page Hero Image*/
 /*Front Page Hero Image*/
 /*Front Page Hero Image*/
-img.logo-back {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 no-repeat top;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 no-repeat top;
-  background-size: cover;
-  height: 100vh;
-  min-width: 1120px; }
-
-img.logo-front {
-  height: 275px;
-  width: 275px; }
-
-/*
 div.front-page-hero {
-background-image: url('../assets/images/inhabitent-logo-full.svg'), url('../assets/images/home-hero.jpg');
-background-position: center 60px, center top;
-background-repeat: no-repeat, no-repeat;
-background-size: 150px, cover;
-margin-top: 30px;
-height: 400px;
-width: 100%;
-text-align: center;
-color: #ffffff;
-display: flex;
-flex-direction: column;
+  background-image: url("../../assets/images/inhabitent-logo-full.svg"), url("../../assets/images/home-hero.jpg");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 25%, 100%;
+  margin-top: 30px;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  min-width: 1120px;
+  display: block;
+  /*flex-direction: column;
 align-items: center;
-justify-content: center;
-}*/
+justify-content: center;*/ }
+
 /*Front Page Inhabitent Journal*/
 /*Front Page Inhabitent Journal*/
 /*Front Page Inhabitent Journal*/
 div#something.products-or-something {
   max-width: 1120px;
-  text-align: center; }
+  text-align: center;
+  width: 1120px; }
 
 section.front_page_journal {
   display: -webkit-box;
@@ -1751,7 +1738,8 @@ div.latest-adventures h1 {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  width: 1120px; }
 
 div.center-latest-adventures {
   display: -webkit-box;
@@ -1759,7 +1747,8 @@ div.center-latest-adventures {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  width: 1120px; }
 
 section.latest-adventures-container {
   display: -webkit-box;

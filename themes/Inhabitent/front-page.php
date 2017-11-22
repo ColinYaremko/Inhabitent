@@ -9,12 +9,15 @@
 
 
 <body>
-	<div id="primary" class="content-area">
+	
+	<div class="front-page-hero">
+	</div> <!--front-page-hero-->
+		<section class="custom-hero-banner">
+    </section>	
+		<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		 <section class="custom-hero-banner">
-			 <img src="<?php echo get_template_directory_uri() . '/assets/images/inhabitent-logo-full.svg' ?>" class="logo-front" alt="Inhabitent logo" />
-			 <img src="<?php echo get_template_directory_uri() . '/assets/images/home-hero.jpg' ?>" class="logo-back" alt="Inhabitent Hero" />
-      </section>
+
+
 		
 		<div class="journal-information">
 		<?php if ( have_posts() ) : ?>
@@ -25,8 +28,6 @@
 				</header>
 			<?php endif; ?>
 
-		<div class="front-page-hero">
-		</div> <!--front-page-hero-->
 
 
 
@@ -157,3 +158,5 @@ $posts_array = get_posts( $args ); ?>
 </div> <!-- footer-over-here -->
 
 
+<!-- <img src="<?php echo get_template_directory_uri() . '/assets/images/inhabitent-logo-full.svg' ?>" class="logo-front" alt="Inhabitent logo" />
+			 <img src="<?php echo get_template_directory_uri() . '/assets/images/home-hero.jpg' ?>" class="logo-back" alt="Inhabitent Hero" /> -->
