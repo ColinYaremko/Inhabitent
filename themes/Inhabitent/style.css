@@ -1642,33 +1642,124 @@ section.want-to-contain-this {
 section.try-this-and-pray {
   display: inline; }
 
+/*Front Page Hero Image*/
+/*Front Page Hero Image*/
+/*Front Page Hero Image*/
+img.logo-back {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 no-repeat top;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 no-repeat top;
+  background-size: cover;
+  height: 100vh;
+  min-width: 1120px; }
+
+img.logo-front {
+  height: 275px;
+  width: 275px; }
+
+/*
+div.front-page-hero {
+background-image: url('../assets/images/inhabitent-logo-full.svg'), url('../assets/images/home-hero.jpg');
+background-position: center 60px, center top;
+background-repeat: no-repeat, no-repeat;
+background-size: 150px, cover;
+margin-top: 30px;
+height: 400px;
+width: 100%;
+text-align: center;
+color: #ffffff;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}*/
+/*Front Page Inhabitent Journal*/
+/*Front Page Inhabitent Journal*/
+/*Front Page Inhabitent Journal*/
+div#something.products-or-something {
+  max-width: 1120px;
+  text-align: center; }
+
+section.front_page_journal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 0; }
+
+div.single-journal-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  max-width: 250px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e1e1e1;
+  margin-left: 20px; }
+
+/*LATEST ADVENTURES*/
+/*LATEST ADVENTURES*/
+/*LATEST ADVENTURES*/
 div.bonfire {
-  width: 50%; }
+  width: 560px; }
 
 div.canoe-gal {
-  width: 50%; }
+  width: 560px; }
 
 div.mountain-night {
-  width: 50%; }
+  width: 560px; }
+
+div.three-pic-flex {
+  width: 560px; }
 
 img.girl-in-canoe {
   height: 540px;
   width: 540px; }
 
 .beach-fire {
-  width: 560px;
-  height: 250px; }
+  width: 540px;
+  height: 270px;
+  padding-bottom: 10px; }
 
 .mountain-pic {
   height: 270px;
-  width: 270px; }
+  width: 270px;
+  padding-right: 10px; }
 
 .night-sky {
   height: 270px;
-  width: 270px; }
+  width: 270px;
+  padding-left: 10px; }
 
 div.latest-adventures h1 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+div.center-latest-adventures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 section.latest-adventures-container {
   display: -webkit-box;
@@ -1680,7 +1771,9 @@ section.latest-adventures-container {
           flex-direction: row;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
-          flex: 1 1 0; }
+          flex: 1 1 0;
+  margin: 0px;
+  max-width: 1120px; }
 
 div.three-pic-flex {
   display: -webkit-box;
@@ -1692,7 +1785,9 @@ div.three-pic-flex {
           flex-direction: column;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
-          flex: 1 1 0; }
+          flex: 1 1 0;
+  width: 560px;
+  margin: 0px; }
 
 div.mountain-night {
   display: -webkit-box;
@@ -1707,15 +1802,15 @@ div.mountain-night {
           flex: 1 1 0;
   width: 560px; }
 
+/*Search BAR*/
+/*Search BAR*/
+/*Search BAR*/
 div.header-search {
   padding-top: 10px; }
 
 form.search-form {
   padding-top: 10px; }
 
-/*Search BAR*/
-/*Search BAR*/
-/*Search BAR*/
 .search-form-wrapper {
   display: none;
   position: absolute;
@@ -1726,6 +1821,30 @@ form.search-form {
 
 .search-form-wrapper.open {
   display: block; }
+
+div.journal-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+div.front_page_journal {
+  max-width: 1120px; }
+
+body {
+  display: block; }
+
+div.footer-over-here {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 /*--------------------------------------------------------------
 # Media

@@ -62,8 +62,8 @@
 </div>
 <div class="footer-block-item">
 	<div class="text-logo">
-		<a href="http://tent.academy.red/" rel="home"></a>
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/inhabitent-logo-text.svg" class="logo" alt="Inhabitent logo text";>
+		<a href="http://tent.academy.red/" rel="home"></a>
 	</div>
 </div>
 </div>	

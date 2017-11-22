@@ -3,13 +3,20 @@
  * The Front Page template file.
  *
  * @package Inhabitent_Theme
- */
+ */?>
 
-get_header(); ?>
+<?php get_header(); ?>
+
+
 <body>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+		 <section class="custom-hero-banner">
+			 <img src="<?php echo get_template_directory_uri() . '/assets/images/inhabitent-logo-full.svg' ?>" class="logo-front" alt="Inhabitent logo" />
+			 <img src="<?php echo get_template_directory_uri() . '/assets/images/home-hero.jpg' ?>" class="logo-back" alt="Inhabitent Hero" />
+      </section>
+		
+		<div class="journal-information">
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -18,6 +25,8 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 
+		<div class="front-page-hero">
+		</div> <!--front-page-hero-->
 
 
 
@@ -36,10 +45,11 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
+      </div> <!-- journal information -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+	<div class="product-information">
 	<section class="product-info container"> <!-- Products I think -->
             <h2>Shop Stuff</h2>
             <?php
@@ -65,11 +75,12 @@ get_header(); ?>
                
             <?php endif; ?>
          </section>
+</div> <!-- product information -->
 
 
-
-
-
+<div id="something" class="products-or-something">
+		<h1>Inhabitent Journal</h1>
+<section class="front_page_journal">
 <?php
 $args = array(
 	'posts_per_page'   => 3,
@@ -95,25 +106,34 @@ $posts_array = get_posts( $args ); ?>
 <?php $products = new WP_Query( $args ); /* $args set above*/ ?>
 <?php if ( $products->have_posts() ) : ?>
 	 <?php while ( $products->have_posts() ) : $products->the_post(); ?>
-		<div class="front_page_journal">
-	 		<?php the_post_thumbnail( 'medium_large' )?>
-      <h1><?php the_title(); ?></h1>
+				
+			<div class="single-journal-display">	
+			<div class="journal-display-image"> 
+			<?php the_post_thumbnail( 'medium' )?>
+			</div> <!-- journal-display-image-->
+			<div class="journal-display-title">
+			<h1><?php the_title(); ?></h1>
+			</div> <!-- journal-diplay-title-->
+			<div class="journal-display-text">
 			<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php inhabitent_posted_by(); ?>
-		</div>
+      </div> <!--journal-display-text-->
+     </div> <!-- single-journal-display -->	
+		
 
-   <?php endwhile; ?>
+
+	 <?php endwhile; ?>
+	</section> <!-- front_page_journal--> 
    <?php the_posts_navigation(); ?>
-   <?php wp_reset_postdata(); ?>
+  <?php wp_reset_postdata(); ?>
 <?php else : ?>
       <h2>Nothing found!</h2>
 <?php endif; ?>
-
-
-
-
+</div> <!-- products-or-something -->
 <div class="latest-adventures">
 	<h1>Latest Adventures</h1>
 </div>
+<div class="center-latest-adventures">
+
 <section class="latest-adventures-container">
 	<div class="canoe-gal">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/canoe-girl.jpg" class="girl-in-canoe" alt="Girl in canoe" >
@@ -127,9 +147,13 @@ $posts_array = get_posts( $args ); ?>
 		  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/night-sky.jpg" class="night-sky" alt="Sky at night" >
 	  </div>
   </div>
-<section>
-
+</section>
+</div> <!-- center-latest-adventures-->
 </body>
 
-<aside class-"footer-over-here"><?php get_sidebar(); ?></aside>
+
+<div class="footer-over-here">
 <?php get_footer(); ?>
+</div> <!-- footer-over-here -->
+
+
