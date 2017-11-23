@@ -72,7 +72,7 @@ body.archive.category div.site-content,
 body.date div.site-content {
 	display: flex;
 	flex-direction: row-reverse;
-	width: $width;
+	// width: $width;
 	margin: auto;
 }
 
@@ -397,18 +397,28 @@ div.product-type-block-wrapper img {
 
 section.product-info.container h2 {
 	text-align: center;
+	text-transform: uppercase;
 }
 div#content.site-content {
 display: flex;
-flex-direction: column;
+flex-direction: row;
 	
 }
 
+.home div#content.site-content {
+	flex-direction: column;
+		
+	}
+
+
 div.product-type-block-wrapper {
 	padding: 30px;
-	border-style: solid;
-	border-width: 5px;
-	border-color: red;
+	flex: 1 1 25%;
+	text-align:center;
+	// border-style: solid;
+	// border-width: 5px;
+	// border-color: red;
+	border: 1px solid #eee;
 }
 nav#site-navigation.main-navigation {
 	display: flex;
@@ -425,7 +435,7 @@ div.displaystuff {
 }
 
 article.type-product {
-height: 100vh;
+// height: 50vh;
 }
 
 header-entry-header img {
@@ -456,11 +466,9 @@ footer.site-footer {
   background-repeat: repeat;
   background-size: cover;
   margin-top: 30px;
-	height: 512px 512px;
+	// height: 512px 512px;
 	color: #ffffff;
 	// width: 100%;
-
-
 }
 
 div.footer-block-item {
@@ -489,7 +497,10 @@ div.copyright-container {
 
 
 
-
+.mainnav-wrapper {
+	display: flex;
+	align-items: center;
+}
 
 header.entry-header img.attachment-large-size-large.wp-post-image {
 	width: 1120px;
@@ -536,7 +547,7 @@ background-image: url('../../assets/images/inhabitent-logo-full.svg'), url('../.
 background-position: center, center;
 background-repeat: no-repeat, no-repeat;
 background-size: 25%, 100%;
-margin-top: 30px;
+//margin-top: 30px;
 height: 100vh;
 width: 100%;
 text-align: center;
@@ -570,7 +581,7 @@ section.front_page_journal {
 div.single-journal-display {
  display: flex;
  flex-flow:	column nowrap;
- max-width: 250px;
+ max-width: 33%;
  border-style: solid;
  border-width: 1px;
  border-color: #e1e1e1;
@@ -625,7 +636,7 @@ div.latest-adventures h1 {
 	text-transform: uppercase;
 	display: flex;
 	justify-content: center;
-	width: 1120px
+	// width: 1120px
 }
 
 div.center-latest-adventures {
@@ -666,7 +677,7 @@ div.mountain-night {
 /*Search BAR*/
 
 div.header-search {
-	padding-top: 10px;
+//	padding-top: 10px;
 }
 
 form.search-form {
@@ -705,3 +716,22 @@ div.footer-over-here {
 	display: flex;
 	flex-direction: column;
 }
+
+
+
+img.logo {
+	height: 33px;
+	width: 50px;
+}
+
+header#masthead.site-header {
+//	padding: 0 0 10px 0;
+background-color: hsla(0,0%,100%,.85);
+border-bottom: 1px solid #e1e1e1;
+padding: .5rem 0;
+position: fixed;
+transition: top .5s linear;
+width: 100%;
+z-index: 3;
+}
+

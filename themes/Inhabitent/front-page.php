@@ -19,8 +19,8 @@
 
 
 		
-		<div class="journal-information">
-		<?php if ( have_posts() ) : ?>
+		<div class="journal-information ">
+		
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
@@ -31,26 +31,11 @@
 
 
 
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content' ); ?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
       </div> <!-- journal information -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<div class="product-information">
+	<div class="product-information maxcontain">
 	<section class="product-info container"> <!-- Products I think -->
             <h2>Shop Stuff</h2>
             <?php
@@ -79,7 +64,7 @@
 </div> <!-- product information -->
 
 
-<div id="something" class="products-or-something">
+<div id="something" class="products-or-something maxcontain">
 		<h1>Inhabitent Journal</h1>
 <section class="front_page_journal">
 <?php
@@ -110,7 +95,7 @@ $posts_array = get_posts( $args ); ?>
 				
 			<div class="single-journal-display">	
 			<div class="journal-display-image"> 
-			<?php the_post_thumbnail( 'medium' )?>
+			<?php the_post_thumbnail( 'medium-large' )?>
 			</div> <!-- journal-display-image-->
 			<div class="journal-display-title">
 			<h1><?php the_title(); ?></h1>
@@ -130,7 +115,13 @@ $posts_array = get_posts( $args ); ?>
       <h2>Nothing found!</h2>
 <?php endif; ?>
 </div> <!-- products-or-something -->
-<div class="latest-adventures">
+
+
+<div class="adventures-wrapper maxcontain">
+
+
+
+<div class="latest-adventures ">
 	<h1>Latest Adventures</h1>
 </div>
 <div class="center-latest-adventures">
@@ -150,7 +141,11 @@ $posts_array = get_posts( $args ); ?>
   </div>
 </section>
 </div> <!-- center-latest-adventures-->
-</body>
+
+</div>
+
+
+
 
 
 <div class="footer-over-here">

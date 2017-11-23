@@ -154,10 +154,15 @@ body.archive .page-header {
 	font-family: Merriweather;
 }
 
+.image-mask {
+	height: 160px;
+	overflow:hidden;
+}
 article.type-product {
-	width: 258px;
-	height: 100%;
-	padding: 0;
+	// width: 258px;
+	// height: 100%;
+	flex: 0 1 25%;
+	padding: 1rem;
 	margin: 13px 0;
 	border: 1px $color__border solid;
 	div.text-wrapper {

@@ -13,7 +13,7 @@ get_header(); ?>
 
 			<header class="page-header">
 			<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					single_term_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
@@ -39,4 +39,8 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+	</div><!-- close .site -->
+
+<div class="footer-over-here">
+	<?php get_footer(); ?>
+</div> <!-- footer-over-here -->

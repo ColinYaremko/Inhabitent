@@ -8,27 +8,24 @@
 *
 **/
 
-
-
-
 get_header ();  ?>
 
 <div id="primary" class="content-area">
-  <main id="main" class="site-main" rule="main">
+  <main id="main" class="site-main" >
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
       <header class="entry-header custom-hero">
         <div class="container">
-          <?php the_title( '<h1 class"entry-title">', '</h1>'); ?>
+          <?php the_title( '<h1 class="entry-title">', '</h1>'); ?>
         </div>
       </header>
 
       <div class="container">
         <div class="entry-content">
           <h2>Our Story</h2>
-          <?php echo CFS()->get( 'about_our-story' ); ?>
+          <?php echo CFS()->get( 'about_our_story' ); ?>
 
           <h2>Our Team</h2>
-          <?php echo CFS()->get( 'about_our-team' ); ?>
+          <?php echo CFS()->get( 'about_our_team' ); ?>
         </div>
       </div>
     </article>
@@ -36,10 +33,7 @@ get_header ();  ?>
 </div> <!-- #primary -->
 
 
+</div><!-- close .site -->
 
 
-
-<?php
-?>
-
-<?php get_footer(); ?>
+	<?php get_footer(); ?>

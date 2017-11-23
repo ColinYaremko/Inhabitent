@@ -486,10 +486,15 @@ body.archive .page-header h1.page-title {
   background-color: #fff;
   font-family: Merriweather; }
 
+.image-mask {
+  height: 160px;
+  overflow: hidden; }
+
 article.type-product {
-  width: 258px;
-  height: 100%;
-  padding: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  padding: 1rem;
   margin: 13px 0;
   border: 1px #e1e1e1 solid; }
   article.type-product div.text-wrapper {
@@ -1247,7 +1252,6 @@ body.date div.site-content {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  width: 1120px;
   margin: auto; }
 
 body.archive.tag div.site-content h1.page-title,
@@ -1529,12 +1533,19 @@ div.product-type-block-wrapper img {
   width: 70px; }
 
 section.product-info.container h2 {
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 div#content.site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.home div#content.site-content {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1542,9 +1553,11 @@ div#content.site-content {
 
 div.product-type-block-wrapper {
   padding: 30px;
-  border-style: solid;
-  border-width: 5px;
-  border-color: red; }
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  text-align: center;
+  border: 1px solid #eee; }
 
 nav#site-navigation.main-navigation {
   display: -webkit-box;
@@ -1565,9 +1578,6 @@ div.displaystuff {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0; }
-
-article.type-product {
-  height: 100vh; }
 
 header-entry-header img {
   min-width: 1120px; }
@@ -1594,7 +1604,6 @@ footer.site-footer {
   background-repeat: repeat;
   background-size: cover;
   margin-top: 30px;
-  height: 512px 512px;
   color: #ffffff; }
 
 div.footer-block-item {
@@ -1613,6 +1622,14 @@ div.copyright-container {
   width: 1120px;
   text-align: center;
   text-transform: uppercase; }
+
+.mainnav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 header.entry-header img.attachment-large-size-large.wp-post-image {
   width: 1120px;
@@ -1650,7 +1667,6 @@ div.front-page-hero {
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
   background-size: 25%, 100%;
-  margin-top: 30px;
   height: 100vh;
   width: 100%;
   text-align: center;
@@ -1691,7 +1707,7 @@ div.single-journal-display {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  max-width: 250px;
+  max-width: 33%;
   border-style: solid;
   border-width: 1px;
   border-color: #e1e1e1;
@@ -1738,8 +1754,7 @@ div.latest-adventures h1 {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  width: 1120px; }
+          justify-content: center; }
 
 div.center-latest-adventures {
   display: -webkit-box;
@@ -1794,9 +1809,6 @@ div.mountain-night {
 /*Search BAR*/
 /*Search BAR*/
 /*Search BAR*/
-div.header-search {
-  padding-top: 10px; }
-
 form.search-form {
   padding-top: 10px; }
 
@@ -1834,6 +1846,20 @@ div.footer-over-here {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+
+img.logo {
+  height: 33px;
+  width: 50px; }
+
+header#masthead.site-header {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e1e1e1;
+  padding: .5rem 0;
+  position: fixed;
+  -webkit-transition: top .5s linear;
+  transition: top .5s linear;
+  width: 100%;
+  z-index: 3; }
 
 /*--------------------------------------------------------------
 # Media
@@ -2130,6 +2156,11 @@ iframe {
   position: relative;
   top: 100px; }
 
+.maxcontain {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+
 .page-template-default .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2138,7 +2169,6 @@ iframe {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  width: 1120px;
   margin: 0 auto; }
   .page-template-default .site-content article#post-6 {
     width: 100%; }

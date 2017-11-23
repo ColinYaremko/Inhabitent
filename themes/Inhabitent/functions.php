@@ -89,7 +89,7 @@ function inhabitent_scripts() {
 
 	wp_enqueue_script( 'tent-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
-	wp_enqueue_script( 'tent-search', get_template_directory_uri() . '/js/search.js', array(), '20130115', true );
+	wp_enqueue_script( 'tent-search', get_template_directory_uri() . '/build/js/search.min.js', array(), false, true );
 
 	wp_enqueue_script( 'font-awesome-cdn', 'https://use.fontawesome.com/9420eb347a.js', array(), 4.7, true);
 	

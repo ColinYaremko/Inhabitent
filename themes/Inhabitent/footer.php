@@ -10,11 +10,6 @@
 <footer id="colophon" class="site-footer" role="contentinfo">
 
 
-
-
-
-
-
 <section class="bottom-flex-area">
 	
 <div id="foot-contain" class="footer-blocks container">
@@ -61,32 +56,27 @@
 	</div>
 </div>
 <div class="footer-block-item">
-	<div class="text-logo">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/inhabitent-logo-text.svg" class="logo" alt="Inhabitent logo text";>
+	<div class="footer-text-logo">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/inhabitent-logo-text.svg" class="footer-logo" alt="Inhabitent logo text";>
 		<a href="http://tent.academy.red/" rel="home"></a>
 	</div>
 </div>
 </div>	
-</section/
+</section>
 
 <section class="copyright-info-foot">
 <div class="site-info">
 	<div class="copyright-container">
 </br>
-								Copyright &copy; 2017 Inhabitent Theme				</div>
+								Copyright &copy; 2017 Inhabitent Theme			
+								</div>
 </div>
 </section>
 </footer>
 
+	
+</div>
 
-
-
-
-
-
-
-
-		<?php wp_footer(); ?>
-
+<?php wp_footer(); ?>
 	</body>
 </html>

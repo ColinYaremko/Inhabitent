@@ -26,4 +26,8 @@ get_header(); ?>
 <?php get_sidebar(); ?>
 </div>
 </section>
-<?php get_footer(); ?>
+</div><!-- close .site -->
+
+<div class="footer-over-here">
+	<?php get_footer(); ?>
+</div> <!-- footer-over-here -->

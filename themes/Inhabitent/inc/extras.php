@@ -72,6 +72,7 @@ function inhabitent_change_login_logo() { ?>
 				padding-bottom: 30px;
 			}
 	</style>
+	
 <?php }
 add_action( 'login_head', 'inhabitent_change_login_logo' );
 
@@ -85,3 +86,15 @@ function inhabitent_url_logo_title() {
 }
 	
 add_filter('login_headertitle', 'inhabitent_url_logo_title' );
+
+function inhabitent_archive_title( $title ) {
+	if ( is_post_type_archive( 'product') ) {
+		$title = 'Shop Stuff';
+	}
+	elseif (is_tax( 'product-type') ){
+		$title = sprintf ( '%1@s', single_term_title ( '', false));
+	}
+	return $title;
+}
+
+add_filter( 'get_the_archive_title', 'inhabitent_archive_title' );

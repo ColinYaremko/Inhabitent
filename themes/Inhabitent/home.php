@@ -64,4 +64,8 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
-<?php get_footer(); ?>
+</div><!-- close .site -->
+
+<div class="footer-over-here">
+	<?php get_footer(); ?>
+</div> <!-- footer-over-here -->

@@ -252,10 +252,17 @@ iframe {
 	top: 100px;
 }
 
+// container max width utility 
+.maxcontain {
+	max-width: $width;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .page-template-default .site-content {
 	display: flex;
 	flex-direction: row-reverse;
-	width: $width;
+	// width: $width;
 	margin: 0 auto;
 	article#post-6 {
 		width: 100%;
