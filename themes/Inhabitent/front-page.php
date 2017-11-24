@@ -98,11 +98,14 @@ $posts_array = get_posts( $args ); ?>
 			<?php the_post_thumbnail( 'medium-large' )?>
 			</div> <!-- journal-display-image-->
 			<div class="journal-display-title">
-			<h1><?php the_title(); ?></h1>
+			<h3><?php the_title(); ?></h3>
 			</div> <!-- journal-diplay-title-->
 			<div class="journal-display-text">
 			<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php inhabitent_posted_by(); ?>
-      </div> <!--journal-display-text-->
+			</div> <!--journal-display-text-->
+			<div class="journal-display-url">
+			<a class="back-btn" href="http://inhabitent/ <?php the_title(); ?>">Read Entry</a>
+     </div> <!-- journal-display-url -->
      </div> <!-- single-journal-display -->	
 		
 

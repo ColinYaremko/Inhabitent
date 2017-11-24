@@ -23,6 +23,17 @@ get_header(); ?>
 				<?php ?>
 			</header><!-- .page-header -->
 
+                <div class="shop-stuff-nav-items">
+                    <ul class="shop-stuff-nav-items-list">
+                        <li><p><a href="inhabitent/product-type/do">Do</a></p>
+                        <li><p><a href="inhabitent/product-type/eat">Eat</a></p>
+                        <li><p><a href="inhabitent/product-type/sleep">Sleep</a></p>
+                        <li><p><a href="inhabitent/product-type/wear">Wear</a></p>
+                    </ul> <!-- shop-stuff-nav-items-list -->
+                </div> <!-- shop-stuff-nav-items -->
+
+
+
 			<div class="displaystuff">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
