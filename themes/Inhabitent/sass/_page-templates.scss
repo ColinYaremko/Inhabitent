@@ -20,6 +20,13 @@ div.site-content {
 	}
 }
 
+.page-template-about {
+	.site-content main.site-main {
+		width: 100vw;
+		margin: 0;
+	}
+}
+
 .shop-stuff {
 	width: auto;
 	height: auto;
@@ -297,9 +304,9 @@ iframe {
 
 //about page
 body.page-template-about div.container {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
+	// position: absolute;
+	// left: 50%;
+	// transform: translateX(-50%);
 	}
 	.entry-content {
 	h2 {

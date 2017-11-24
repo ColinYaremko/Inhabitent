@@ -1640,9 +1640,6 @@ section.product-info.container h2 {
 section.product-info.container {
   margin-top: 20px; }
 
-div#surrounded.surround {
-  width: 70%; }
-
 div.sidebar-move {
   width: 30%; }
 
@@ -1847,7 +1844,7 @@ div.mountain-night {
 /*Search BAR*/
 /*Search BAR*/
 form.search-form {
-  padding-top: 10px; }
+  padding-top: 6px; }
 
 .search-form-wrapper {
   display: none;
@@ -1870,7 +1867,13 @@ div.journal-information {
           flex-direction: column; }
 
 div.journal-display-text {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: .75rem; }
+
+div.journal-display-title {
+  font-size: 1.6rem;
+  color: #248a83; }
 
 section.front_page_journal {
   max-width: 1120px;
@@ -1955,7 +1958,7 @@ div.shop-stuff-nav-items {
       -ms-flex-pack: center;
           justify-content: center; }
 
-ul.shop-stuff-nav-items-list {
+div.shop-stuff-nav-items-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1972,14 +1975,37 @@ ul.shop-stuff-nav-items-list {
   padding: 0;
   margin: 0 auto; }
 
-ul.shop-stuff-nav-items-list li p a {
-  margin: 0 1.5rem 0 1.5rem;
-  text-transform: uppercase;
-  text-decoration: none; }
+div.this-is-the-button {
+  margin: 0 20px 0 20px; }
 
 div.taxonomy-description {
   font-size: 1rem;
   font-weight: normal; }
+
+.taxonomy-page-damn-image {
+  overflow: hidden;
+  height: 166px; }
+  .taxonomy-page-damn-image img {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4); }
+
+div.product-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
+div.product-box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%; }
+
+div.journal-display-image {
+  overflow: hidden;
+  height: 234px; }
+
+div.social-media-buttons {
+  margin-top: 20px; }
 
 /*--------------------------------------------------------------
 # Media
@@ -2066,6 +2092,10 @@ div.site-content {
   div.site-content main.site-main {
     width: 1120px;
     margin: 0 auto; }
+
+.page-template-about .site-content main.site-main {
+  width: 100vw;
+  margin: 0; }
 
 .shop-stuff {
   width: auto;
@@ -2314,12 +2344,6 @@ iframe {
       font-size: 1rem; }
     .page-template-default .site-content article#post-6 h2.mail {
       text-align: left; }
-
-body.page-template-about div.container {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%); }
 
 .entry-content h2 {
   font-size: 2.2rem; }

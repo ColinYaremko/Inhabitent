@@ -516,7 +516,7 @@ section.product-info.container{
 
 
 div#surrounded.surround {
-	width: 70%;
+	// width: 70%;
 }
 
 div.sidebar-move {
@@ -714,7 +714,7 @@ div.header-search {
 }
 
 form.search-form {
-	padding-top: 10px;
+	padding-top: 6px;
 } 
 
 .search-form-wrapper {
@@ -724,7 +724,7 @@ form.search-form {
 	right: 0;
 	padding: 20px 15px;
 	margin-top: 50px;
-	//background: url(/resources/images/misc/bg_search-open.png) right center no-repeat #f89d1c;
+	
 }
 
 .search-form-wrapper.open {
@@ -738,8 +738,14 @@ div.journal-information {
 
 div.journal-display-text {
 	margin-bottom: 15px;
+	margin-top:	15px;
+	font-size: .75rem;
 }
 
+div.journal-display-title {
+ font-size: 1.6rem;
+ color: #248a83
+}
 
 section.front_page_journal {
 max-width: 1120px;
@@ -818,7 +824,7 @@ div.shop-stuff-nav-items {
 	justify-content: center;
 }
 
-ul.shop-stuff-nav-items-list {
+div.shop-stuff-nav-items-list {
 	display: flex;
 	flex-direction: row;
 	list-style: none;
@@ -829,14 +835,49 @@ ul.shop-stuff-nav-items-list {
 	margin: 0 auto;
 }
 
-ul.shop-stuff-nav-items-list li p a {
-	margin: 0 1.5rem 0 1.5rem;
-	text-transform: uppercase;
-	text-decoration: none;
+div.this-is-the-button {
+	margin: 0 20px 0 20px;
+
 }
 
 
 div.taxonomy-description {
 	font-size: 1rem;
 	font-weight: normal;
+}
+
+div#tax-pro-type-text.taxonomy-product-type-text {
+	// display: flex;
+	// width: 25%;
+	}
+
+.tax-product-type {
+	
+}
+
+.taxonomy-page-damn-image{
+ overflow: hidden;
+ height: 166px;
+
+ img {
+	 transform: scale(1.4);
+ }
+
+}
+div.product-grid {
+	display: flex;
+	width: 100%;
+}
+div.product-box {
+flex: 1 1 25%;
+	
+}
+
+div.journal-display-image {
+ overflow: hidden;
+ height: 234px;
+}
+
+div.social-media-buttons {
+	margin-top:20px;
 }

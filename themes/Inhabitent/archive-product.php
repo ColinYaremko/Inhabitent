@@ -23,13 +23,30 @@ get_header(); ?>
 				<?php ?>
 			</header><!-- .page-header -->
 
-                <div class="shop-stuff-nav-items">
-                    <ul class="shop-stuff-nav-items-list">
-                        <li><p><a href="inhabitent/product-type/do">Do</a></p>
-                        <li><p><a href="inhabitent/product-type/eat">Eat</a></p>
-                        <li><p><a href="inhabitent/product-type/sleep">Sleep</a></p>
-                        <li><p><a href="inhabitent/product-type/wear">Wear</a></p>
-                    </ul> <!-- shop-stuff-nav-items-list -->
+            <div class="shop-stuff-nav-items">
+            
+            <?php
+						$terms = get_terms( array(
+								'taxonomy' => 'product-type',
+								'hide_empty' => 0,
+						) );
+						if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
+				?>
+				
+						<div class="shop-stuff-nav-items-list">
+
+							<?php foreach ( $terms as $term ) : ?>
+
+									<div class="this-is-the-button">
+					
+										<p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?></a></p>
+									</div> <!-- this-is-the-button -->
+
+							<?php endforeach; ?>
+
+						</div> <!-- shop-stuff-nav-items-list -->
+						
+				<?php endif; ?>
                 </div> <!-- shop-stuff-nav-items -->
 
 

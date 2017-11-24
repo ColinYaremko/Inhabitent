@@ -2,7 +2,7 @@
 
 /**
 *
-* Template Name: About Page
+* Template Name: About
 *
 * @package Inhabitent Theme
 *
@@ -19,7 +19,7 @@ get_header ();  ?>
         </div>
       </header>
 
-      <div class="container">
+      <div class="container maxcontain">
         <div class="entry-content">
           <h2>Our Story</h2>
           <?php echo CFS()->get( 'about_our_story' ); ?>
