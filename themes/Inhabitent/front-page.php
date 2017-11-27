@@ -134,14 +134,34 @@ $posts_array = get_posts( $args ); ?>
 <section class="latest-adventures-container">
 	<div class="canoe-gal">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/canoe-girl.jpg" class="girl-in-canoe" alt="Girl in canoe" >
+		<h3 class="entry-title">
+			Getting Back to Nature in a Canoe
+		<h3>
+		<a class="white-btn" href="http://localhost:3000/Inhabitent/">Read More</a>
 	</div>
 	  <div class="three-pic-flex">
 	  <div class="bonfire">
-	    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/beach-bonfire.jpg" class="beach-fire" alt="Bonfire on the beach" >
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/beach-bonfire.jpg" class="beach-fire" alt="Bonfire on the beach" >
+			<h3 class="entry-title">
+				A Night with Friends as the Beach
+			<h3>
+			<a class="white-btn" href="http://localhost:3000/Inhabitent/">Read More</a>
     </div>
     <div class="mountain-night">
-		  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/mountain-hikers.jpg" class="mountain-pic" alt="Mountain hiking"> 
-		  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/night-sky.jpg" class="night-sky" alt="Sky at night" >
+			<div class="mountain-pic-one">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/mountain-hikers.jpg" class="mountain-pic" alt="Mountain hiking"> 
+				<h3 class="entry-title">
+					Taking in the View at Big Mountain
+				<h3>
+				<a class="white-btn" href="http://localhost:3000/Inhabitent/">Read More</a>
+			</div> <!-- mountain-pic-one-->
+			<div class="mountain-pic-two">		
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/night-sky.jpg" class="night-sky" alt="Sky at night" >
+				<h3 class="entry-title">
+					Star Gazing at the Night Sky
+				<h3>
+				<a class="white-btn" href="http://localhost:3000/Inhabitent/">Read More</a>
+			</div> <!-- mountain-pic-two-->	
 	  </div>
   </div>
 </section>

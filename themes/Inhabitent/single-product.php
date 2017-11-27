@@ -39,9 +39,9 @@ get_header(); ?>
 			<footer class="entry-footer">
 				<?php inhabitent_entry_footer(); ?>
 				<div class="social-media-buttons">
-					<button><i class="fa fa-facebook"></i>Like</button>
-					<button><i class="fa fa-twitter"></i>Tweet</button>
-					<button><i class="fa fa-pinterest"></i>Pin</button>
+					<button><i class="fa fa-facebook"></i>  Like</button>
+					<button><i class="fa fa-twitter"></i>  Tweet</button>
+					<button><i class="fa fa-pinterest"></i>  Pin</button>
 				</div> <!--social-media-buttons-->
 				</footer><!-- .entry-footer -->
 					</div> <!-- single-product-text-media -->

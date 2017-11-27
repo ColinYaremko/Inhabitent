@@ -63,6 +63,18 @@
 	margin-bottom: 40px;
 }
 
+article.product.type-product.status-publish header.entry-header h2.entry-title a {
+	font-size: 1rem;
+}
+
+ div.single-product-text-media h1.entry-title {
+	color: $color__accent;
+	line-height: 1.25;
+	font-size: 2.4rem;
+	margin-bottom: .5rem;
+	font-weight: bold;
+}
+
 //blog page
 .post-template-default .content-area,
 .post-template-default .site-content,
@@ -373,14 +385,14 @@ div#content.site-content p.BodyA {
 	width: 250px;
 }
 /********************************************************************/
-
-
-/********************************************************************/
-
-
-/********************************************************************/
-
-
+/***  *********   *****                *****  ***********************/
+/***    ******    *****  *******************  ***********************/
+/***  **  **  **  *****  *******************  ***********************/
+/***  ****  ****  *****                *****  ***********************/
+/***  **********  *****  *******************  ***********************/
+/***  **********  *****  *******************  ***********************/
+/***  **********  *****  ********************************************/
+/***  **********  *****                *****  ***********************/
 /********************************************************************/
 
 div.product-type-blocks {
@@ -416,11 +428,13 @@ div.product-type-block-wrapper {
 	padding: 35px;
 	flex: 1 1 25%;
 	text-align:center;
-	// border-style: solid;
-	// border-width: 5px;
-	// border-color: red;
 	border: 1px solid #eee;
 }
+div.product-type-block-wrapper:hover{
+	border-color: $color__orange-brand
+}
+
+
 nav#site-navigation.main-navigation {
 	display: flex;
 	justify-content: flex-end;
@@ -439,7 +453,10 @@ header-entry-header img {
 	min-width: 1120px;
 }
 
-
+div#something.products-or-something h1{
+	font-size: 2.4rem;
+	margin-top: 2rem;
+}
 
 
 footer#colophone.site-footer{
@@ -463,9 +480,8 @@ footer.site-footer {
   background-repeat: repeat;
   background-size: cover;
   margin-top: 30px;
-	// height: 512px 512px;
 	color: #ffffff;
-	// width: 100%;
+
 }
 
 div.footer-block-item {
@@ -555,9 +571,7 @@ color: #ffffff;
 min-width: 1120px;
 display: block;
 margin-bottom: 25px;
-/*flex-direction: column;
-align-items: center;
-justify-content: center;*/
+
 }
 
 a.btn {
@@ -602,16 +616,66 @@ div.single-journal-display {
  border-width: 1px;
  border-color: #e1e1e1;
  margin-left: 20px;
- height: 25vw;
+ min-height: 465px;
+ height: 32vw;
 }
 
 a.back-btn {
 	margin-top: 10px;
-	background: #248a83;
-	border: none;
 	border-radius: 0;
-	color: #fff;
 	cursor: pointer;
+	font-family: Novecento Sans Web,sans-serif;
+	font-size: 14.4px;
+	font-size: .9rem;
+	line-height: 1;
+	padding: .75rem 1.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 1px solid #000;
+	color: #000;
+	background-color: transparent;
+}
+
+	a.back-btn:hover {
+		background-color: $color__green-brand;
+		color: #fff
+	}
+
+
+/*LATEST ADVENTURES*/
+/*LATEST ADVENTURES*/
+/*LATEST ADVENTURES*/
+
+
+
+
+div.canoe-gal {
+	width: 560px;
+	color: $color__background-body;
+	position: relative;
+	
+}
+	
+	div.canoe-gal h3.entry-title {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	width: 550px;
+	background-color: transparent;
+	line-height: 1;
+	font-weight: 700;
+	font-size: 3rem;
+	}
+
+div.canoe-gal h3 a.white-btn {
+	display: block;
+	position: absolute;
+	top: 200px;
+	left: 20px;
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: transparent;
 	font-family: Novecento Sans Web,sans-serif;
 	font-size: 14.4px;
 	font-size: .9rem;
@@ -621,29 +685,137 @@ a.back-btn {
 	text-transform: uppercase;
 }
 
-/*LATEST ADVENTURES*/
-/*LATEST ADVENTURES*/
-/*LATEST ADVENTURES*/
-
+div.canoe-gal h3 a.white-btn:hover {
+background-color: $color__green-brand;
+}
 
 div.bonfire {
 	width: 560px;
+	position: relative;
 }
 
-div.canoe-gal {
-	width: 560px;
+div.bonfire h3.entry-title {
+	display: block;
+	position: absolute;
+	color: $color__background-body;
+	top: -10px;
+	left: 20px;
+	width: 550px;
+	background-color: transparent;
+	line-height: 1;
+	font-size: 2.4rem;
+	}
+
+div.bonfire a.white-btn {
+	display: block;
+	position: absolute;
+	top: 200px;
+	left: 20px;
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: transparent;
+	font-family: Novecento Sans Web,sans-serif;
+	font-size: 14.4px;
+	font-size: .9rem;
+	line-height: 1;
+	padding: .75rem 1.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+div.bonfire h3 a.white-btn:hover {
+background-color: $color__green-brand;
 }
 
 div.mountain-night {
 	width: 560px;
 }
 
+div.mountain-pic-one {
+  position: relative;
+}
+
+div.mountain-pic-one h3.entry-title {
+	display: block;
+	position: absolute;
+	color: $color__background-body;
+	top: -10px;
+	left: 20px;
+	width: 550px;
+	background-color: transparent;
+	line-height: 1;
+	//font-weight: 700;
+	font-size: 1.6rem;
+	max-width: 220px;
+	}
+
+	div.mountain-pic-one a.white-btn {
+		display: block;
+		position: absolute;
+		top: 200px;
+		left: 20px;
+		border: 1px solid #fff;
+		color: #fff;
+		background-color: transparent;
+		font-family: Novecento Sans Web,sans-serif;
+		font-size: 14.4px;
+		font-size: .9rem;
+		line-height: 1;
+		padding: .75rem 1.5rem;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	
+	div.mountain-pic-one h3 a.white-btn:hover {
+	background-color: $color__green-brand;
+	}
+
+div.mountain-pic-two {
+  position: relative;
+}
+
+div.mountain-pic-two h3.entry-title {
+	display: block;
+	position: absolute;
+	color: $color__background-body;
+	top: -10px;
+	left: 30px;
+	width: 550px;
+	background-color: transparent;
+	line-height: 1;
+	//font-weight: 700;
+	font-size: 1.6rem;
+	max-width: 220px;
+	}
+
+	div.mountain-pic-two a.white-btn {
+		display: block;
+		position: absolute;
+		top: 200px;
+		left: 30px;
+		border: 1px solid #fff;
+		color: #fff;
+		background-color: transparent;
+		font-family: Novecento Sans Web,sans-serif;
+		font-size: 14.4px;
+		font-size: .9rem;
+		line-height: 1;
+		padding: .75rem 1.5rem;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	
+	div.mountain-pic-two h3 a.white-btn:hover {
+	background-color: $color__green-brand;
+	}
+
+
 div.three-pic-flex {
 	width: 560px;
 }
 
 img.girl-in-canoe {
-	height: 540px;
+	height: 560px;
 	width: 540px;
 }
 
@@ -654,13 +826,13 @@ img.girl-in-canoe {
 }
 
 .mountain-pic {
-  height: 270px;
+  height: 260px;
 	width: 270px;
 	padding-right: 10px;
 }
 
 .night-sky {
-	height: 270px;
+	height: 260px;
 	width: 270px;
 	padding-left: 10px;
 }
@@ -669,6 +841,10 @@ div.latest-adventures h1 {
 	text-transform: uppercase;
 	display: flex;
 	justify-content: center;
+	font-size: 2.4rem;
+	font-weight: 400;
+	margin-bottom: 3.75rem;
+	text-align: center;
 	// width: 1120px
 }
 
@@ -702,6 +878,7 @@ div.mountain-night {
 	flex: 1 1 0;
 	width: 560px;
 }
+
 
 
 
@@ -811,6 +988,7 @@ div.single-product-text-media {
 }
 div.single-product-image{
 	display: flex;
+	padding-top: 50px;
 	flex: 1 0 auto;
 }
 
@@ -868,16 +1046,16 @@ div.product-grid {
 	display: flex;
 	width: 100%;
 }
+
 div.product-box {
-flex: 1 1 25%;
-	
+  flex: 1 1 25%;
 }
 
 div.journal-display-image {
- overflow: hidden;
- height: 234px;
+  overflow: hidden;
+  height: 234px;
 }
 
 div.social-media-buttons {
-	margin-top:20px;
+	margin-top: 20px;
 }
