@@ -2,6 +2,10 @@
 
 A WordPress starter theme for RED Academy students, forked from Underscores. Renamed as Inhabitent for Project-4.
 
+![inhabitent](https://user-images.githubusercontent.com/32310250/33295697-121783dc-d38c-11e7-8f58-bdaf0fa24d69.PNG)
+
+Not hosted due to the need for a back-end.
+
 ## Installation
 
 ### 1. Download me (don't clone me!)
@@ -42,7 +46,7 @@ Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Br
 
 * GIT - github
 
-* WordPress
+* WordPress and various plugins.
 
 
 
@@ -50,6 +54,10 @@ Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Br
 
 
 * RED Academy Starter Theme
+
+* RED Web Dev 2017 Fall class
+
+* Jim Bennett
 
 
 
