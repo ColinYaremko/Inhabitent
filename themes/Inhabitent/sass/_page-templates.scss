@@ -6,7 +6,7 @@
 
 
 /* Front page */
-div.site-content {
+body:not(.single) body:not(.blog) div.site-content {
 	display: flex;
 	justify-content: center;
 	align-content: center;
@@ -14,11 +14,13 @@ div.site-content {
 	flex-wrap: nowrap;
 	width: 100vw;
 	min-width: $width;
-	main.site-main {
+	 main.site-main {
 		width: $width;
 		margin: 0 auto;
+		
 	}
 }
+
 
 .page-template-about {
 	.site-content main.site-main {

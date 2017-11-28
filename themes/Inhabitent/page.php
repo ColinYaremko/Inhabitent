@@ -23,9 +23,9 @@ get_header(); ?>
 
 
 
-<div class="sidebar-move">
-<?php get_sidebar(); ?>
-</div>
+	<div class="sidebar-move">
+		<?php get_sidebar(); ?>
+	</div>
 </section>
 </div><!-- close .site -->
 
