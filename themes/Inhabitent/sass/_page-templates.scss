@@ -3,9 +3,10 @@
 --------------------------------------------------------------*/
 
 /* Front page */
-
-
 /* Front page */
+/* Front page */
+/* Front page */
+
 body:not(.single) body:not(.blog) div.site-content {
 	display: flex;
 	justify-content: center;
@@ -17,7 +18,6 @@ body:not(.single) body:not(.blog) div.site-content {
 	 main.site-main {
 		width: $width;
 		margin: 0 auto;
-		
 	}
 }
 
@@ -218,6 +218,7 @@ div.words-wrapper {
 			font-size: 1.6rem;
 		}
 	}
+
 	.read-more-link .read-more {
 		color: $color__background-body;
 		border-color: $color__background-body;
@@ -227,9 +228,11 @@ div.words-wrapper {
 			background-color: $color__green-brand;
 		}
 	}
+
 	p {
 		font-size: 0.8rem;
 	}
+
 	p.more {
 		font-size: 1.2rem;
 		margin: 8px 0;
@@ -271,7 +274,6 @@ iframe {
 .page-template-default .site-content {
 	display: flex;
 	flex-direction: row-reverse;
-	// width: $width;
 	margin: 0 auto;
 	article#post-6 {
 		width: 100%;
@@ -306,9 +308,6 @@ iframe {
 
 //about page
 body.page-template-about div.container {
-	// position: absolute;
-	// left: 50%;
-	// transform: translateX(-50%);
 	}
 	.entry-content {
 	h2 {
@@ -337,4 +336,4 @@ article.page h2 {
 	font-weight: bold;
 	font-size: 2rem;
 	margin-top: 40px;
-}
+} 
